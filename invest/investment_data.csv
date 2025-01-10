@@ -1,0 +1,101 @@
+Category Name,Sector Rank*,Category Type,Investment (2023-2024),Funded Companies,Unicorns,Investment (2024),H1 2024 % growth,Dealroom Signal,VC growth (2019-2023)
+Generative Ai,1,Tags,$64.1B,1432,85,$35B,17%,61,8x
+Ai Model Layer,2,Tags,$51.9B,319,53,$28B,5%,68,9x
+GenAI Model Maker,3,Tags,$50B,281,49,$26B,−6%,70,13x
+GenAI Applications,4,Tags,$15.8B,922,50,$11B,212%,63,3x
+Ai Computing Infrastructure,5,Tags,$6.6B,113,12,$5B,463%,68,6x
+Grid Technology,6,Tags,$5.4B,233,9,$1B,−41%,65,6x
+Carbon Capture And Storage,7,Tags,$3.1B,328,6,$2B,1%,58,6x
+Semiconductor Designers And Manufacturers,8,Tags,$22.3B,1188,67,$9B,36%,50,4x
+GenAI Operation Layer,9,Tags,$2.3B,106,6,$1B,309%,69,2x
+Hydrogen,10,Tags,$6.6B,484,13,$3B,88%,47,9x
+Green Buildings,11,Tags,$7.4B,624,17,$2B,−63%,58,6x
+Carbon Removal,12,Tags,$1.3B,187,3,$530M,−12%,59,8x
+GenAI Computing Layer,13,Tags,$3.8B,14,6,$3B,237%,83,72x
+Green Hydrogen,14,Tags,$1.6B,90,2,$585M,9%,64,90x
+Artificial Intelligence,15,Technologies,$147.6B,26435,417,$80B,22%,43,2x
+Natural Language Processing,16,Technologies,$30.1B,1102,24,$17B,−32%,49,5x
+Hydrogen Production,17,Tags,$2.4B,115,3,$1B,49%,63,30x
+Electrolysis,18,Tags,$1.3B,62,1,$276M,−41%,63,43x
+Carbon Utilisation,19,Tags,$1.7B,104,4,$1B,153%,63,2x
+Affordable And Clean Energy (#7),20,SDG,$48.9B,5432,121,$18B,−10%,47,3x
+Stationary Energy Storage,21,Tags,$6.6B,283,15,$2B,−3%,58,10x
+Building Energy Retrofit,22,Tags,$1.9B,187,3,$436M,−80%,56,7x
+Advanced Materials,23,Tags,$6.4B,557,10,$3B,31%,54,3x
+Energy » Energy Storage,24,Sub industry,$20.3B,1514,56,$6B,−8%,47,4x
+Building Energy Efficiency,25,Tags,$3B,402,6,$772M,−76%,56,5x
+Engineering And Manufacturing Equipment,26,Industries,$6.8B,1650,13,$3B,3%,38,2x
+Semiconductors,27,Industries,$30B,8256,83,$12B,29%,29,4x
+Energy » Clean Energy,28,Sub industry,$24.5B,4712,56,$9B,−13%,38,5x
+Mlops,29,Tags,$5.8B,594,19,$3B,108%,63,1x
+Industry Innovation And Infrastructure (#9),30,SDG,$12B,2009,23,$5B,41%,49,2x
+Ai Safety,31,Tags,$1.5B,27,2,$1B,112%,70,1x
+Heat Pump,32,Tags,$1.1B,79,1,$263M,−86%,53,26x
+Sustainable Building Construction,33,Tags,$3.5B,187,3,$908M,3%,55,9x
+In-Space Operations,34,Tags,$1.6B,171,3,$531M,−42%,52,17x
+Quantum Technologies,35,Technologies,$3.4B,358,8,$2B,19%,48,3x
+Shipbuilding And Refit,36,Tags,$1.1B,110,1,$459M,−28%,56,19x
+Thermal Energy Storage,37,Tags,$926.2M,49,0,$628M,980%,59,23x
+Quantum Computing,38,Tags,$3.1B,164,6,$2B,25%,57,3x
+Quantum Computers And Processors,39,Tags,$2.1B,79,5,$1B,243%,62,2x
+Defence,40,Tags,$4.7B,319,9,$3B,−61%,44,5x
+Energy,41,Industries,$62.7B,25384,146,$25B,−17%,32,2x
+Blue Economy,42,Tags,$4.2B,986,5,$2B,−28%,50,2x
+Photonics Tech,43,Tags,$3.4B,305,9,$2B,55%,54,2x
+Hardware,44,Technologies,$92.6B,13553,294,$43B,49%,40,2x
+Climate Tech,45,Tags,$82.4B,12929,239,$32B,−11%,47,2x
+Biodiversity,46,Tags,$892.5M,209,1,$430M,−50%,52,10x
+Deep Learning,47,Technologies,$32.6B,1656,36,$19B,−12%,48,2x
+Chips And Processors,48,Tags,$10.1B,499,34,$6B,56%,50,2x
+Memory And Storage,49,Tags,$7B,53,6,$2B,2153%,52,44x
+Sustainable Aviation Fuel,50,Tags,$1.3B,62,3,$1B,269%,59,1x
+Engineering And Manufacturing Equipment,26,Industries,$6.8B,1650,13,$3B,3%,38,2x
+Semiconductors,27,Industries,$30B,8256,83,$12B,29%,29,4x
+Energy » Clean Energy,28,Sub industry,$24.5B,4712,56,$9B,−13%,38,5x
+Mlops,29,Tags,$5.8B,594,19,$3B,108%,63,1x
+Industry Innovation And Infrastructure (#9),30,SDG,$12B,2009,23,$5B,41%,49,2x
+Ai Safety,31,Tags,$1.5B,27,2,$1B,112%,70,1x
+Heat Pump,32,Tags,$1.1B,79,1,$263M,−86%,53,26x
+Sustainable Building Construction,33,Tags,$3.5B,187,3,$908M,3%,55,9x
+In-Space Operations,34,Tags,$1.6B,171,3,$531M,−42%,52,17x
+Quantum Technologies,35,Technologies,$3.4B,358,8,$2B,19%,48,3x
+Shipbuilding And Refit,36,Tags,$1.1B,110,1,$459M,−28%,56,19x
+Thermal Energy Storage,37,Tags,$926.2M,49,0,$628M,980%,59,23x
+Quantum Computing,38,Tags,$3.1B,164,6,$2B,25%,57,3x
+Quantum Computers And Processors,39,Tags,$2.1B,79,5,$1B,243%,62,2x
+Defence,40,Tags,$4.7B,319,9,$3B,−61%,44,5x
+Energy,41,Industries,$62.7B,25384,146,$25B,−17%,32,2x
+Blue Economy,42,Tags,$4.2B,986,5,$2B,−28%,50,2x
+Photonics Tech,43,Tags,$3.4B,305,9,$2B,55%,54,2x
+Hardware,44,Technologies,$92.6B,13553,294,$43B,49%,40,2x
+Climate Tech,45,Tags,$82.4B,12929,239,$32B,−11%,47,2x
+Biodiversity,46,Tags,$892.5M,209,1,$430M,−50%,52,10x
+Deep Learning,47,Technologies,$32.6B,1656,36,$19B,−12%,48,2x
+Chips And Processors,48,Tags,$10.1B,499,34,$6B,56%,50,2x
+Memory And Storage,49,Tags,$7B,53,6,$2B,2153%,52,44x
+Sustainable Aviation Fuel,50,Tags,$1.3B,62,3,$1B,269%,59,1x
+Space,51,Industries,$10.1B,1180,22,$5B,8%,48,1x
+Nuclear Fusion,52,Tags,$2.1B,42,4,$1B,−62%,62,2x
+Ai Drug Discovery,53,Tags,$7B,595,20,$4B,146%,62,2x
+Circular Economy,54,Tags,$12.5B,2533,36,$3B,−31%,50,2x
+Water Management,55,Tags,$993M,267,1,$241M,−75%,49,7x
+Space Upstream,56,Tags,$11.3B,1112,26,$5B,−0%,49,2x
+Selling Own Inventory,57,Income stream,$60.8B,23659,191,$24B,−14%,30,2x
+Humanoid,58,Tags,$1.7B,46,8,$1B,1030%,44,2x
+Ev Battery Recycling,59,Tags,$3.9B,67,4,$430M,65%,56,3x
+Ev Battery,60,Tags,$10.1B,416,34,$2B,−26%,55,4x
+Responsible Consumption And Production (#12),61,SDG,$13.5B,4125,43,$5B,−44%,48,2x
+Energy » Waste Solution,62,Sub industry,$6.7B,1930,12,$2B,−26%,41,3x
+Regenerative Agriculture,63,Tags,$1.2B,179,2,$184M,−61%,55,4x
+Sustainability Measurement,64,Tags,$1.2B,240,2,$585M,2%,54,6x
+Sustainable Development Goals,65,Tags,$88.7B,15471,288,$35B,−10%,47,1x
+Climate Action (#13),66,SDG,$55.3B,6559,179,$21B,−6%,50,1x
+Alternative Battery Chemistry,67,Tags,$2B,97,2,$1B,45%,60,8x
+Mining Technologies,68,Tags,$2.1B,232,3,$899M,−67%,44,5x
+Urban Tech,69,Tags,$10.8B,1311,34,$3B,−65%,54,2x
+Mrv,70,Tags,$222.4M,43,1,$26M,−33%,64,17x
+Health » Pharmaceutical,71,Sub industry,$32.2B,4957,111,$15B,0%,40,2x
+Industrial Electrification,72,Tags,$1B,86,1,$378M,−2%,59,8x
+Ai Chips And Processors,73,Tags,$5B,137,17,$3B,84%,62,1x
+Satellite Imagery,74,Tags,$684.1M,173,0,$324M,229%,56,4x
+Ai Security,75,Tags,$344.9M,33,0,$167M,822%,66,7x
