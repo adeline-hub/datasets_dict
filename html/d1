@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="fr-FR" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WF6G792W');
+</script>
+    <!-- Gestion de l'HTML -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Language" content="fr-FR" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Expires" content="none" />
+    <!-- Gestion des robots -->
+    <meta name="robots" content="index,follow" />
+    <meta name="copyright" content="Spin Interactive"/>
+    <meta name="Author" content="Spin interactive" />
+    <meta name="Publisher" content="Spin Interactive" />
+    <meta name="Revisit-After" content="10 days" />
+    <!-- Gestion du viewport -->
+    <meta name="viewport" id="myViewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="image_src" href="" />
+    <!-- Gestion SEO -->
+    <title>Dashboard - Plateform G2P</title>
+    <meta name="description" content="" />
+    <!-- Gestion Réseaux sociaux
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+     -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/themeUser/default.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel='stylesheet' href='/css/jquery-ui.min.css'>
+    <link rel='stylesheet' href='/css/jquery-ui.theme.min.css'>
+    <link rel='stylesheet' href='/css/Chart.min.css'>
+    <link rel='stylesheet' href='/DataTables/datatables.min.css'>
+        <link rel="stylesheet" href="/css/themeUser/classic.css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700" rel="stylesheet">
+    <script type="text/javascript" src="/js/vendor/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/css_browser_selector.js"></script>
+    <script type="text/javascript" src="/js/functions.js"></script>
+    <script type="text/javascript" src='/js/vendor/jquery-ui.min.js'></script>
+    <script type="text/javascript" src='/js/vendor/Chart.min.js'></script>
+    <script type="text/javascript" src='/DataTables/datatables.min.js'></script>
+    <script src="/bundles/fosjsrouting/js/router.min.js"></script>
+    <script src="/js/routing?callback=fos.Router.setData"></script>
+        </head>
+
+        
+                    
+            <bodyclass="classic">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id='GTM-WF6G792W'"
+            height="0" width="0" style="display:none;visibility:hidden;"></iframe>
+</noscript>
+
+    <header id="heading">
+        <figure>
+    <a href="/home">
+            <img src="/images/logo.svg"/>
+        </a>
+</figure>
+<div>
+
+    
+    <form class="search" data-path="/search">
+        <input class="global-search" type="text" placeholder="Rechercher..." />
+    </form>
+    <ul>
+        <li><span class="didfont search_opener">&#xe90c;</span></li>
+        <li><a class="didfont" target="_blank" href="https://g2pdidacthem.zendesk.com/hc/fr">&#xe92e;</a></li>
+        <li><a href="/profile" class="didfont">&#xe905;</a></li>
+        <li><a href="/logout" class="logout didfont">&#xe92b;</a></li>
+    </ul>
+    </div>
+    </header>
+
+    <aside id="menu">
+        	<nav>
+																																						<ul class="main admin_clientstruct">
+												<li class="main admin_clientstruct current">
+						<a class="main_menu_button" href="/sub_menu/admin_dashboard">Structures clientes</a>
+					</li>
+																<li class="main admin_functionalities">
+						<a class="main_menu_button" href="/sub_menu/functionalities">Paramétrage des fonctionnalités</a>
+					</li>
+																<li class="main admin_users">
+						<a class="main_menu_button" href="/sub_menu/users">Paramétrage des rôles et utilisateurs</a>
+					</li>
+																<li class="main admin_stats">
+						<a class="main_menu_button" href="/sub_menu/statistics">Statistiques</a>
+					</li>
+																</ul>
+	</nav>
+    </aside>
+
+    <main id="dashboard" class="grid ">
+			<header>
+							<h1>Vos <strong>88</strong> clients</h1>
+					</header>
+		<header>
+			<aside>
+								<form>
+					<select class="filter">
+						<optgroup label="Clients">
+							<option data-filter="" selected>Aucun filtre</option>
+							<option data-filter="branch" >Branche</option>
+							<option data-filter="firm" >Entreprise</option>
+							<option data-filter="premium" >Premium</option>
+							<option data-filter="no-users" >En cours de création (aucun utilisateur lié)</option>
+						</optgroup>
+						<optgroup label="Non clients">
+							<option data-filter="floating-firms" >Entreprises non clientes sans branche</option>
+						</optgroup>
+					</select>
+				</form>
+				<ul>
+					<li class="filter">
+						<select id="sortingSelect">
+							<option value="NEWEST" >Les plus récents</option>
+							<option value="ASC" >De A à Z</option>
+							<option value="DESC" >De Z à A</option>
+						</select>
+					</li>
+					<li class="display_switcher">
+						<span class="didfont">&#xe90a;</span>
+						<span class="didfont">&#xe909;</span>
+					</li>
+				</ul>
+			</aside>
+		</header>
+		<div class="wrapper">
+			<ul>
+				<li>
+					<ul>
+						<li>Client</li>
+						<li>Utilisateurs</li>
+						<li>Quota</li>
+						<li>Type</li>
+						<li>Vision client</li>
+						<li>Paramétrage client</li>
+						<li>Premium</li>
+					</ul>
+				</li>
+														<li>
+						<ul>
+														<li class="client"><p>ASSOCIATION DEPARTEMENTALE LES PUPILLES DE L&#039;ENSEIGNEMENT PUBLIC DU MORBIHAN</p></li>
+							<li class="bottom">
+								<ul class="type">
+																		<li><p>entreprise</p></li>
+									<li>
+																					<a class="vision" href='/client/view/firm/11709/0'><span>Vision client</span></a>
+																				<a class="admin" href='/client/view/firm/11709/1'><span>Paramétrage client</span></a>
+									</li>
+								</ul>
+								<div class="infos">
+									<p class="users">1</p>
+																		<p class="quota"><strong>20</strong>/100</p>
+								</div>
+							</li>
+						</ul>
+					</li>
+														<li>
+						<ul>
+														<li class="client"><p>APCDL</p></li>
+							<li class="bottom">
+								<ul class="type">
+																		<li><p>entreprise</p></li>
+									<li>
+																					<a class="vision" href='/client/view/firm/11341/0'><span>Vision client</span></a>
+																				<a class="admin" href='/client/view/firm/11341/1'><span>Paramétrage client</span></a>
+									</li>
+								</ul>
+								<div class="infos">
+									<p class="users">5</p>
+																		<p class="quota"><strong>0</strong>/1</p>
+								</div>
+							</li>
+						</ul>
+					</li>
+														<li>
+						<ul>
+														<li class="client"><p>GIE IPECA-MSAé</p></li>
+							<li class="bottom">
+								<ul class="type">
+																		<li><p>entreprise</p></li>
+									<li>
+																					<a class="vision" href='/client/view/firm/11336/0'><span>Vision client</span></a>
+																				<a class="admin" href='/client/view/firm/11336/1'><span>Paramétrage client</span></a>
+									</li>
+								</ul>
+								<div class="infos">
+									<p class="users">1</p>
+																		<p class="quota"><strong>4</strong>/4</p>
+								</div>
+							</li>
+						</ul>
+					</li>
+														<li>
+						<ul>
+														<li class="client"><p>ASSOCIATION BETHANIE</p></li>
+							<li class="bottom">
+								<ul class="type">
+																		<li><p>entreprise</p></li>
+									<li>
+																					<a class="vision" href='/client/view/firm/10983/0'><span>Vision client</span></a>
+																				<a class="admin" href='/client/view/firm/10983/1'><span>Paramétrage client</span></a>
+									</li>
+								</ul>
+								<div class="infos">
+									<p class="users">13</p>
+																		<p class="quota"><strong>14</strong>/14</p>
+								</div>
+							</li>
+						</ul>
+					</li>
+														<li>
+						<ul>
+														<li class="client"><p>Armée du salut</p></li>
+							<li class="bottom">
+								<ul class="type">
+																		<li><p>entreprise</p></li>
+									<li>
+																					<a class="vision" href='/client/view/firm/10932/0'><span>Vision client</span></a>
+																				<a class="admin" href='/client/view/firm/10932/1'><span>Paramétrage client</span></a>
+									</li>
+								</ul>
+								<div class="infos">
+									<p class="users">3</p>
+																		<p class="quota"><strong>18</strong>/60</p>
+								</div>
+							</li>
+						</ul>
+					</li>
+														<li>
+						<ul>
+														<li class="client"><p>STOPORISK</p></li>
+							<li class="bottom">
+								<ul class="type">
+																		<li><p>entreprise</p></li>
+									<li>
+																				<a class="admin" href='/client/view/firm/10898/1'><span>Paramétrage client</span></a>
+									</li>
+								</ul>
+								<div class="infos">
+									<p class="users">3</p>
+																		<p class="quota"><strong>2</strong>/100</p>
+								</div>
+							</li>
+						</ul>
+					</li>
+														<li>
+						<ul>
+														<li class="client"><p>Fondation des artistes</p></li>
+							<li class="bottom">
+								<ul class="type">
+																		<li><p>entreprise</p></li>
+									<li>
+																					<a class="vision" href='/client/view/firm/10712/0'><span>Vision client</span></a>
+																				<a class="admin" href='/client/view/firm/10712/1'><span>Paramétrage client</span></a>
+									</li>
+								</ul>
+								<div class="infos">
+									<p class="users">2</p>
+																		<p class="quota"><strong>2</strong>/2</p>
+								</div>
+							</li>
+						</ul>
+					</li>
+														<li>
+						<ul>
+														<li class="client"><p>ALARA</p></li>
+							<li class="bottom">
+								<ul class="type">
+																		<li><p>entreprise</p></li>
+									<li>
+																					<a class="vision" href='/client/view/firm/10580/0'><span>Vision client</span></a>
+																				<a class="admin" href='/client/view/firm/10580/1'><span>Paramétrage client</span></a>
+									</li>
+								</ul>
+								<div class="infos">
+									<p class="users">7</p>
+																		<p class="quota oversize"><strong>554</strong>/400</p>
+								</div>
+							</li>
+						</ul>
+					</li>
+														<li>
+						<ul>
+														<li class="client"><p>EAF</p></li>
+							<li class="bottom">
+								<ul class="type">
+																		<li><p>entreprise</p></li>
+									<li>
+																					<a class="vision" href='/client/view/firm/10266/0'><span>Vision client</span></a>
+																				<a class="admin" href='/client/view/firm/10266/1'><span>Paramétrage client</span></a>
+									</li>
+								</ul>
+								<div class="infos">
+									<p class="users">4</p>
+																		<p class="quota"><strong>12</strong>/12</p>
+								</div>
+							</li>
+						</ul>
+					</li>
+														<li>
+						<ul>
+														<li class="client"><p>ORDRE DE MALTE FRANCE</p></li>
+							<li class="bottom">
+								<ul class="type">
+																		<li><p>entreprise</p></li>
+									<li>
+																					<a class="vision" href='/client/view/firm/10209/0'><span>Vision client</span></a>
+																				<a class="admin" href='/client/view/firm/10209/1'><span>Paramétrage client</span></a>
+									</li>
+								</ul>
+								<div class="infos">
+									<p class="users">4</p>
+																		<p class="quota oversize"><strong>7</strong>/5</p>
+								</div>
+							</li>
+						</ul>
+					</li>
+														<li>
+						<ul>
+														<li class="client"><p>PREVENTECH Simulation</p></li>
+							<li class="bottom">
+								<ul class="type">
+																		<li><p>entreprise</p></li>
+									<li>
+																					<a class="vision" href='/client/view/firm/10168/0'><span>Vision client</span></a>
+																				<a class="admin" href='/client/view/firm/10168/1'><span>Paramétrage client</span></a>
+									</li>
+								</ul>
+								<div class="infos">
+									<p class="users">4</p>
+																		<p class="quota"><strong>3</strong>/3</p>
+								</div>
+							</li>
+						</ul>
+					</li>
+														<li>
+						<ul>
+														<li class="client"><p>ASSOCIATION GAP</p></li>
+							<li class="bottom">
+								<ul class="type">
+																		<li><p>entreprise</p></li>
+									<li>
+																					<a class="vision" href='/client/view/firm/9239/0'><span>Vision client</span></a>
+																				<a class="admin" href='/client/view/firm/9239/1'><span>Paramétrage client</span></a>
+									</li>
+								</ul>
+								<div class="infos">
+									<p class="users">1</p>
+																		<p class="quota oversize"><strong>56</strong>/53</p>
+								</div>
+							</li>
+						</ul>
+					</li>
+							</ul>
+							<nav id="pagination">
+					<ul>
+													<li class="current"  ><a href="/dashboard">1</a></li>
+													<li   class="next"><a href="/dashboard/2">2</a></li>
+													<li   class="next"><a href="/dashboard/3">3</a></li>
+													<li   class="after"><a href="/dashboard/4">4</a></li>
+													<li  ><a href="/dashboard/5">5</a></li>
+													<li  ><a href="/dashboard/6">6</a></li>
+													<li  ><a href="/dashboard/7">7</a></li>
+													<li  ><a href="/dashboard/8">8</a></li>
+											</ul>
+				</nav>
+					</div>
+	</main>
+
+    <footer id="footing">
+        <nav>
+	<ul>
+		<li>
+        	<a href="/pdf/CGUV.pdf" target="_blank">CGU / CGV</a>
+		</li>
+		<li>
+			<a href="/pdf/MENTIONS_LEGALES.pdf" target="_blank">Mentions légales</a>
+		</li>
+		<li>
+			<a href="/contact">Contact</a>
+		</li>
+	</ul>
+</nav>    </footer>
+    
+    
+    
+                
+    
+    <script>
+    $("select.filter").change(function() {
+		var filter = $(this).find(":selected").data('filter');
+        url = "/dashboard/1/filter/__filter";
+        url = url.replace('__filter', filter);
+		if (!filter) {
+			url = url.substring(0, url.length - 1);
+		}
+        window.location = url;
+    });
+	
+    $(document).ready(function() {
+        $('#sortingSelect').change(function() {
+            var selectedValue = $(this).val();
+            var url = "/dashboard/1/order/ASC".replace('ASC', selectedValue);
+            window.location.href = url;
+        });
+    });
+</script>
+</body>
+</html>
